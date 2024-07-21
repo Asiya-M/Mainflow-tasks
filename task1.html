@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('https://st4.depositphotos.com/2185383/39217/v/450/depositphotos_392173420-stock-illustration-online-education-self-learning-concept.jpg');
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-color: #030222;
+            color: white;
+        }
+
+        nav {
+            height: 70px;
+            background: #063247;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        nav ol {
+            display: flex;
+            margin: 0;
+        }
+
+        nav ol li {
+            display: inline-block;
+        }
+
+        nav ol li a {
+            color: white;
+            display: block;
+            padding: 0 15px;
+            line-height: 70px;
+            font-size: 20px;
+            background: #063247;
+            transition: color .5s;
+        }
+
+        nav ol li a:hover,
+        nav ol li a.active {
+            color: #23dbdb;
+        }
+
+        .home-page-content {
+            text-align: center;
+            padding: 200px;
+        }
+
+        .home-page-content h1,
+        .home-page-content h3 {
+            margin: 10px 0;
+        }
+    </style>
+    <title>Learn HTML</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Learn HTML</div>
+        <ol>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="https://www.mainflow.in/">Main Page</a></li>
+            <li><a href="#">About</a></li>
+        </ol>
+    </nav>
+    <div class="overlay">
+        <div class="home-page-content">
+            <h1 class="text-center home-page-text h1-responsive">Basics Of HTML</h1>
+            <h3 class="text-center home-supporting-text">Develop a Webpage with the help of Main flow</h3>
+        </div>
+    </div>
+</body>
+</html>
