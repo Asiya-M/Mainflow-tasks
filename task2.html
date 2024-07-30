@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .home-page-content {
+            text-align: center;
+            padding: 200px;
+            color: white;
+            font-size: 30px;
+        }
+
+        body {
+            background-image: url('https://st4.depositphotos.com/2185383/39217/v/450/depositphotos_392173420-stock-illustration-online-education-self-learning-concept.jpg');
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain; /* Adjust this line */
+            background-color: #030222;
+        }
+
+        nav {
+            height: 70px;
+            background: #063247;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        nav ol {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ol li {
+            position: relative;
+            margin-left: 10px;
+        }
+
+        nav ol li a {
+            color: white;
+            padding: 0 10px;
+            line-height: 70px;
+            font-size: 18px;
+            background: #063247;
+            transition: .5s;
+        }
+
+        nav ol li a:hover,
+        nav ol li a.active {
+            color: #23dbdb;
+        }
+
+        nav ol li ul {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: #063247;
+            padding: 0;
+            display: none;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+            z-index: 1000;
+            width: 150px; /* Reduced width for dropdown */
+        }
+
+        nav ol li:hover ul {
+            display: block;
+        }
+
+        nav ol li ul li {
+            width: 100%; /* Ensure full width */
+            border-bottom: 1px solid #042331;
+        }
+
+        nav ol li ul li a {
+            line-height: 50px;
+            font-size: 16px;
+            padding: 0 10px;
+        }
+
+        nav ol li ul li a:hover {
+            color: #23dbdb;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 20px;
+            }
+
+            nav .logo {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            nav ol {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+
+            nav ol li {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            nav ol li a {
+                font-size: 16px;
+                padding: 10px 15px;
+                line-height: 1.5;
+            }
+
+            nav ol li ul {
+                position: static;
+                box-shadow: none;
+                width: 100%;
+            }
+
+            nav ol li ul li {
+                border-bottom: 1px solid #042331;
+                width: 100%;
+            }
+
+            nav ol li ul li a {
+                line-height: 1.5;
+                padding: 10px 15px;
+            }
+
+            .home-page-content {
+                padding: 100px 20px;
+                font-size: 1.5rem;
+            }
+
+            .home-page-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .home-page-content h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav .logo {
+                font-size: 20px;
+            }
+
+            nav ol li a {
+                font-size: 14px;
+            }
+
+            .home-page-content {
+                padding: 100px 10px;
+                font-size: 1.2rem;
+            }
+
+            .home-page-content h1 {
+                font-size: 2rem;
+            }
+
+            .home-page-content h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+    <title>Learn HTML</title>
+</head>
+<body>
+    <nav>
+        <label class="logo">Learn HTML</label>
+        <ol>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="https://www.mainflow.in/">Main Page</a></li>
+            <li>
+                <a href="#">Task</a>
+                <ul>
+                    <li><a href="task1 details.html">Task 1</a></li> <!-- Link to Task 1 -->
+                    <li><a href="task2 details.html">Task 2</a></li> <!-- Link to Task 2 -->
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+        </ol>
+    </nav>
+    <div class="overlay">
+        <div class="home-page-content">
+            <h1 class="text-center home-page-text h1-responsive">Basics Of HTML</h1>
+            <h3 class="text-center home-supporting-text">Develop a Webpage with the help of Main flow</h3>
+        </div>
+    </div>
+</body>
+</html>
